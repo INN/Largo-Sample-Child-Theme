@@ -1,7 +1,7 @@
 # Largo Sample Child Theme
 An example WordPress child theme based on the Largo parent theme (http://github.com/inn/largo)
 
-**WARNING**
+~~~~~~~~~~~~~~~~~~~~~ **WARNING** ~~~~~~~~~~~~~~~~~~~~~
 
 We are still working on this so right now it just gives you an example of our preferred directory structure for a child theme (mirroring what we do in the Largo parent theme). 
 
