@@ -14,6 +14,7 @@ If you have specific questions or requests for docs, please open an issue so mak
 
 ## Table of contents
 
+- [Unit Tests and Continuous Integration](/tests/readme.md)
 - [Stylesheets (LESS and CSS)](/less/readme.md)
 - [Custom Theme Javascript and CSS](#custom-theme-javascript-and-css)
 - [Removing or replacing Largo Javascript or CSS](#removing-or-replacing-largo-javascript-or-css)
