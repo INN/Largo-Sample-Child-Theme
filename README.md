@@ -41,7 +41,7 @@ The process for CSS is similar. See the [`wp_enqueue_style`](http://codex.wordpr
 
 ### Removing or replacing Largo Javascript or CSS
 
-If you want to modify a core part of Largo, you can deregister the default script and replace it with your own.
+If you want to completely remove and/or replace a Javascript or CSS file that is loaded by the Largo parent theme, you can deregister the default script and replace it with your own.
 
 For example:
 
