@@ -1,8 +1,8 @@
 # Largo Sample Child Theme
 
 An example WordPress child theme based on the Largo parent theme (http://github.com/inn/largo)
-
-~~~~~~~~~~~~~~~~~~~~~ **WARNING** ~~~~~~~~~~~~~~~~~~~~~
+* * *
+## WARNING
 
 We are still working on this so right now it just gives you an example of our preferred directory structure for a child theme (mirroring what we do in the Largo parent theme). 
 
@@ -10,7 +10,7 @@ Soon, it will contain a readme in each folder explaining what goes where, how to
 
 If you have specific questions or requests for docs, please open an issue so make sure to address them.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* * *
 
 ## Stylesheets (LESS and CSS)
 
@@ -37,7 +37,7 @@ If you're using OS X:
 
     > brew install node
 
-#### 2. [Install Grunt](http://gruntjs.com/getting-started)
+#### 2. Install [Grunt](http://gruntjs.com/getting-started)
 
     > npm install -g grunt-cli
 
@@ -57,7 +57,7 @@ If you're using OS X:
     Running "less:development" (less) task
     File css/style.css created: 0 B → 40 B
     File homepages/assets/css/your_homepage.css created: 0 B → 51 B
-
+    
 ### Watching your `style.less` file for changes
 
 While you're developing your theme, it can be helpful to have your `css/style.css` file recompiled anytime there is a change made to `less/style.less`.
