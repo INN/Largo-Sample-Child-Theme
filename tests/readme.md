@@ -74,6 +74,8 @@ The included `.travis.yml` will run your tests using WordPress version 4.0.1 and
         > sed -i "s/yourusernamehere/$DB_USER/" wp-tests-config.php
         > sed -i "s/yourpasswordhere/$DB_PASSWORD/" wp-tests-config.php
 
+    If you're using Mac OS X, you'll need to modify the above commands, replacing `sed -i` with `sed -i ''`.
+
 5. Move your `wp-tests-config.php` file to the test directory:
 
         > mv wp-tests-config.php "$WP_TESTS_DIR/wp-tests-config.php"
