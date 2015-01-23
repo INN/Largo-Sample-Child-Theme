@@ -45,7 +45,7 @@ If you're using OS X, open a terminal window and type:
     Running "less:development" (less) task
     File css/style.css created: 0 B → 40 B
     File homepages/assets/css/your_homepage.css created: 0 B → 51 B
-    
+
 ### Watching your `style.less` file for changes
 
 While you're developing your theme, it can be helpful to have your `css/style.css` file recompiled anytime there is a change made to `less/style.less`.
