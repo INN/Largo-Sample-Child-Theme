@@ -22,7 +22,7 @@ If you have specific questions or requests for docs, please open an issue so mak
 
 ## Theme Directory Structure
 
-The layout of this sample theme is based common convention and best practices. What follows is a general outline of what files and directories depend on each other as well as how we tend to use each directory to organize our code.
+The layout of this sample theme is based on convention and best practices. What follows is a general outline of files and directories that loosely depend on each other as well as how we tend to use each directory to organize our code.
 
 ### `tests` and `phpunit.xml`
 
