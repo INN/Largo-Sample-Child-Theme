@@ -36,3 +36,62 @@ All that said, writing tests has proven worthwhile for us. We're dedicated to te
 This sample theme includes a `.travis.yml` file so that you can set up your theme unit tests to be run automatically by [Travis CI](htttp://travis-ci.org/) each time you push changes to your repository.
 
 The included `.travis.yml` will run your tests using WordPress version 4.0.1 and PHP version 5.3. These settings can be changed to your liking. Learn more about Travis CI's [PHP configuration options here](http://docs.travis-ci.com/user/languages/php/).
+
+## Running tests without deploy tools
+
+1. Checkout the WordPress using SVN:
+
+        > export WP_VERSION="4.0.1"
+        > export WP_CORE_DIR=/tmp/wordpress
+        > export WP_TESTS_DIR=/tmp/wordpress/tests/phpunit
+        > svn co --quiet http://develop.svn.wordpress.org/tags/$WP_VERSION $WP_CORE_DIR
+
+2. Place a copy of your theme in the copy of WordPress you just checked out:
+
+        > cp -R your_theme "$WP_CORE_DIR/src/wp-content/themes/your_theme"
+
+3. You'll also need Largo installed in the copy of WordPress you just checked out:
+
+        > git clone git@github.com:INN/Largo.git "$WP_CORE_DIR/src/wp-content/themes/largo"
+
+3. Create a test database:
+
+    Modify these to meet your needs:
+
+        > export DB_USER=root
+        > export DB_PASSWORD=password
+
+    Then run:
+
+        > mysql -e "CREATE DATABASE wordpress_tests;" -u $DB_USER -p$DB_PASSWORD
+
+4. Copy the `wp-tests-config-sample.php` file and editing it:
+
+        > cd $WP_CORE_DIR
+        > cp wp-tests-config-sample.php wp-tests-config.php
+        > sed -i "s:dirname( __FILE__ ) . '/src/':'$WP_CORE_DIR/src/':" wp-tests-config.php
+        > sed -i "s/youremptytestdbnamehere/wordpress_tests/" wp-tests-config.php
+        > sed -i "s/yourusernamehere/$DB_USER/" wp-tests-config.php
+        > sed -i "s/yourpasswordhere/$DB_PASSWORD/" wp-tests-config.php
+
+5. Move your `wp-tests-config.php` file to the test directory:
+
+        > mv wp-tests-config.php "$WP_TESTS_DIR/wp-tests-config.php"
+
+6. Change directories to the copy of your theme and run `phpunit`
+
+        > cd "$WP_CORE_DIR/src/wp-content/themes/your_theme"
+        > phpunit
+        Installing...
+        Running as single site... To run multisite, use -c tests/phpunit/multisite.xml
+        Not running ajax tests... To execute these, use --group ajax.
+        PHPUnit 4.3.4 by Sebastian Bergmann.
+
+        Configuration read from /private/tmp/wordpress/src/wp-content/themes/your_theme/phpunit.xml
+
+        .III
+
+        Time: 1 second, Memory: 22.75Mb
+
+        OK, but incomplete, skipped, or risky tests!
+        Tests: 4, Assertions: 1, Incomplete: 3.

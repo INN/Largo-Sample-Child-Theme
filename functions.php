@@ -30,18 +30,18 @@ add_action('init', 'register_custom_homepage_layout', 0);
  *
  * @see "inc/widgets/your_simple_widget.php"
  */
-function register_widget() {
+function register_custom_widget() {
 	include_once __DIR__ . '/inc/widgets/your_simple_widget.php';
 	register_widget('your_simple_widget');
 }
-add_action('widgets_init', 'register_widget', 1);
+add_action('widgets_init', 'register_custom_widget', 1);
 
 /**
  * Include your theme's javascript
  *
  * @see "js/your_theme.js"
  */
-function enqueue_script() {
+function enqueue_custom_script() {
 	$version = '0.1.0';
 	wp_enqueue_script(
 		'your_theme',
@@ -51,4 +51,4 @@ function enqueue_script() {
 		true
 	);
 }
-add_action('wp_enqueue_scripts', 'enqueue_script');
+add_action('wp_enqueue_scripts', 'enqueue_custom_script');

@@ -1,6 +1,6 @@
 <?php
 
-include_once dirname(__DIR__) . '/homepage-class.php';
+include_once get_template_directory() . '/homepages/homepage-class.php';
 
 class YourHomepageLayout extends Homepage {
 	function __construct($options=array()) {
