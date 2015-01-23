@@ -37,7 +37,7 @@ This sample theme includes a `.travis.yml` file so that you can set up your them
 
 The included `.travis.yml` will run your tests using WordPress version 4.0.1 and PHP version 5.3. These settings can be changed to your liking. Learn more about Travis CI's [PHP configuration options here](http://docs.travis-ci.com/user/languages/php/).
 
-## Running tests without deploy tools
+## Running Tests Without Deploy Tools
 
 1. Checkout the WordPress using SVN:
 
