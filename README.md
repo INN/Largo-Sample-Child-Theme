@@ -16,8 +16,8 @@ If you have specific questions or requests for docs, please open an issue so mak
 
 - [Unit Tests and Continuous Integration](/tests/readme.md)
 - [Stylesheets (LESS and CSS)](/less/readme.md)
-- [Theme Directory Layout](#theme-directory-layout)
-- [Custom Theme Javascript and CSS](#custom-theme-javascript-and-css)
+- [Theme Directory Layout](#theme-directory-structure)
+- [Custom Theme Javascript or CSS](#custom-theme-javascript-or-css)
 - [Removing or replacing Largo Javascript or CSS](#removing-or-replacing-largo-javascript-or-css)
 
 ## Theme Directory Structure
