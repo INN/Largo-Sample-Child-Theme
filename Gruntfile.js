@@ -3,6 +3,15 @@ module.exports = function(grunt) {
 
     // Force use of Unix newlines
     grunt.util.linefeed = '\n';
+    
+    // Find what the current theme's directory is, relative to the WordPress root
+    var path = process.cwd();
+    path = path.replace(/^[\s\S]+\/wp-content/, "\/wp-content");
+    
+    var CSS_LESS_FILES = {
+        'css/child.css': 'less/child.less',
+        'homepages/assets/css/your_homepage.css': 'homepages/assets/less/your_homepage.less',
+    };
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -10,13 +19,13 @@ module.exports = function(grunt) {
         less: {
             development: {
                 options: {
-                    paths: ['less']
+                    paths: ['less'],
+                    sourceMap: true,
+                    outputSourceFiles: true,
+                    sourceMapBasepath: path,
                 },
-                files: {
-                    'css/style.css': 'less/style.less',
-                    'homepages/assets/css/your_homepage.css': 'homepages/assets/less/your_homepage.less'
-                }
-            }
+                files: CSS_LESS_FILES
+            },
         },
 
         watch: {
@@ -25,17 +34,42 @@ module.exports = function(grunt) {
                     'less/**/*.less',
                     'homepages/assets/less/**/*.less'
                 ],
-                tasks: 'less'
+                tasks: [
+                    'less:development',
+                    'cssmin'
+                ]
             },
             sphinx: {
                 files: ['docs/*.rst', 'docs/*/*.rst'],
                 tasks: ['docs']
             }
         },
+        
+        cssmin: {
+            target: {
+                options: {
+                    report: 'gzip'
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'css',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'css',
+                    ext: '.min.css'
+                },
+                {
+                    expand: true,
+                    cwd: 'homepages/assets/css',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'homepages/assets/css',
+                    ext: '.min.css'
+                }]
+            }
+        },
 
-        pot: {
+		pot: {
             options: {
-                text_domain: 'your_theme_domain',
+                text_domain: 'largo',
                 dest: 'lang/',
                 keywords: [ //WordPress localization functions
                     '__:1',

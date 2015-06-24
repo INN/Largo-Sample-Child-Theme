@@ -10,12 +10,12 @@ class YourHomepageLayout extends Homepage {
 			'template' => get_stylesheet_directory() . '/homepages/templates/your_homepage_template.php',
 			'assets' => array(
 				array(
-					'your_homepage_javascript',
-					get_stylesheet_directory_uri() . '/homepages/assets/css/your_homepage.css',
+					'your_homepage_css',
+					get_stylesheet_directory_uri() . '/homepages/assets/css/your_homepage.min.css',
 					array()
 				),
 				array(
-					'your_homepage_css',
+					'your_homepage_js',
 					get_stylesheet_directory_uri() . '/homepages/assets/js/your_homepage.js',
 					array('jquery')
 				)

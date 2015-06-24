@@ -1,0 +1,232 @@
+/**
+ * Largo Sample Child Theme
+ * =======================
+ * Homepage Styles?
+ *    /homepages/less
+ */
+/**
+ * 1.0 - Variables and Utilities
+ *    1.1 - Variables
+ *    1.2 - Utilities
+ * Brand Colors, Theme Colors
+ * Font Definitions
+ * Mixins
+ */
+/**
+ * 1.1 - Variables
+ * =======================
+ * 1.1.1 - Colors
+ * 1.1.2 - Fonts
+ */
+/**
+  * 1.1.1 Colors - Global and Brand
+  * -----------------------
+  */
+/* Default Variable Names
+ * @red, @orange, @yellow
+ * @green, @blue, @purple
+ * @brown, @gray, @black
+ *
+ * @link
+ * @link_hover
+ * @brand_primary (only use if different from default color already in use)
+ * @brand_secondary (only use if different from default color already in use)
+ *
+ * VARIATIONS
+ * @*_light, @*_dark, @*_transparent
+----------------------------- */
+/**
+ * 1.1.2 - Font Definitions
+ * -----------------------
+ */
+/* @headline
+ * Typeface Name
+ * Used on headlines throughout site
+----------------------------- */
+/* @serif
+ * Typeface Name
+ * For body and other general aplications
+----------------------------- */
+/* @sans
+ * Typeface Name
+ * For labels, bylines, photo credits, etc
+----------------------------- */
+/**
+ * 1.2 - Utilities
+ * =======================
+ * 1.1 - Animation
+ */
+/**
+   * 1.1 - Animation
+   * -----------------------
+   */
+/**
+ * 2.0 - Global Styles
+ *
+ * Widgets, Sidebars, Link Styles
+ */
+/**
+ * 2.0 - Global Styles
+ * =======================
+ * 2.1 - Largo Parent Overrides
+ * 2.2 - Link Styles
+ * 2.3 - Image Styles
+ * 2.4 - Button Styles
+ * 2.5 - Sidebars
+ * 2.6 - Widgets
+ *     2.6.1 - Example Widget Definition
+ * 2.7 - Misc
+ */
+/**
+  * 2.1 - Largo Parent Overrides
+  * -----------------------
+  */
+.delete-this-class-its-just-for-show {
+  display: inherit;
+}
+/**
+  * 2.2 - Link Styles
+  * -----------------------
+  */
+/**
+  * 2.3 - Image Styles (use only for global img rule boxes, etc)
+  * -----------------------
+  */
+/**
+  * 2.4 - Button Styles
+  * -----------------------
+  */
+/**
+  * 2.5 - Sidebars
+  * -----------------------
+  */
+/**
+  * 2.6 - Widgets
+  * -----------------------
+  */
+/**
+  * 2.6.1 - Example Widget Definition
+  * -----------------------
+  */
+/**
+  * 2.7 - Misc
+  * -----------------------
+  */
+/**
+ * 3.0 - Header Styles
+ *
+ * Navigation and Other Style
+ */
+/**
+ * 3.0 - Header Styles
+ * =======================
+ * 3.1 - General Header Styles
+ * 3.2 - Main Navigation Styles
+ * 3.3 - Header Search
+ */
+/**
+  * 3.1 - General Header Styles
+  * -----------------------
+  */
+/**
+  * 3.2 - Main Navigation Styles
+  * -----------------------
+  */
+/**
+ * 3.3 - Header Search
+ * -----------------------
+ */
+/**
+ * 4.0 - Typography
+ *
+ * Set Body Text, Story Text, Headlines and other typographic elements
+ */
+/**
+ * 4.0 - Typography
+ * =======================
+ * 4.1 - Largo Parent Override
+ * 4.2 - Body
+ * 4.3 - Headings
+ */
+/**
+   * 4.1 - Largo Parent Override
+   * -----------------------
+   */
+/**
+   * 4.2 - Body
+   * -----------------------
+   */
+/**
+   * 4.3 - Headings
+   * -----------------------
+   */
+/**
+ * 5.0 - Single
+ *
+ * Setup the Article Template including Single Header, Single Content and Single Footer and Below Article
+ *
+ * Applies to post and page templates
+ */
+/**
+ * 5.0 - Single
+ * =======================
+ * 5.1 - Single Template Spacing
+ * 5.2 - Single Header
+ * 5.3 - Single Body
+ * 5.4 - Single Footer
+ * 5.5 - Comments
+ */
+/**
+  * 5.1 - Single Template Spacing
+  * -----------------------
+  */
+/**
+  * 5.2 - Single Header
+  * -----------------------
+  */
+/**
+  * 5.3 - Single Body
+  * -----------------------
+  */
+/**
+  * 5.4 - Footer
+  * -----------------------
+  */
+/**
+  * 5.5 - Comments
+  * -----------------------
+  */
+/**
+ * 6.0 - Archives
+ *
+ * Styles for tag, category, series (archive templates in general)
+ */
+/**
+ * 6.0 Archive
+ * =======================
+ * 6.1 - Category and Date Archives
+ * 6.2 - Series Archives
+ * 6.3 - Author Archives
+ */
+/**
+  * 6.1 - Category and Date Archives
+  * -----------------------
+  */
+/**
+  * 6.2 - Series Archives
+  * -----------------------
+  */
+/**
+  * 6.3 - Author Archives
+  * -----------------------
+  */
+/**
+ * 7.0 - Footer
+ *
+ * Applies to Site Footer
+ */
+/**
+ * 7.0 - Footer
+ * =======================
+ */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxlc3MvX2dsb2JhbC5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBa0JBO0VBQ0UsZ0JBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIDIuMCAtIEdsb2JhbCBTdHlsZXNcbiAqID09PT09PT09PT09PT09PT09PT09PT09XG4gKiAyLjEgLSBMYXJnbyBQYXJlbnQgT3ZlcnJpZGVzXG4gKiAyLjIgLSBMaW5rIFN0eWxlc1xuICogMi4zIC0gSW1hZ2UgU3R5bGVzXG4gKiAyLjQgLSBCdXR0b24gU3R5bGVzXG4gKiAyLjUgLSBTaWRlYmFyc1xuICogMi42IC0gV2lkZ2V0c1xuICogICAgIDIuNi4xIC0gRXhhbXBsZSBXaWRnZXQgRGVmaW5pdGlvblxuICogMi43IC0gTWlzY1xuICovXG5cblxuLyoqXG4gICogMi4xIC0gTGFyZ28gUGFyZW50IE92ZXJyaWRlc1xuICAqIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gICovXG4uZGVsZXRlLXRoaXMtY2xhc3MtaXRzLWp1c3QtZm9yLXNob3cge1xuICBkaXNwbGF5OmluaGVyaXQ7XG59XG5cblxuLyoqXG4gICogMi4yIC0gTGluayBTdHlsZXNcbiAgKiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuICAqL1xuXG5cbi8qKlxuICAqIDIuMyAtIEltYWdlIFN0eWxlcyAodXNlIG9ubHkgZm9yIGdsb2JhbCBpbWcgcnVsZSBib3hlcywgZXRjKVxuICAqIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gICovXG5cblxuLyoqXG4gICogMi40IC0gQnV0dG9uIFN0eWxlc1xuICAqIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gICovXG5cblxuLyoqXG4gICogMi41IC0gU2lkZWJhcnNcbiAgKiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuICAqL1xuXG5cbi8qKlxuICAqIDIuNiAtIFdpZGdldHNcbiAgKiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuICAqL1xuXG5cbi8qKlxuICAqIDIuNi4xIC0gRXhhbXBsZSBXaWRnZXQgRGVmaW5pdGlvblxuICAqIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gICovXG5cblxuLyoqXG4gICogMi43IC0gTWlzY1xuICAqIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gICovXG4iXX0= */
