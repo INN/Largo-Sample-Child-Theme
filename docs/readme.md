@@ -4,7 +4,7 @@ When working with a WordPress theme like Largo, you never want to make edits to 
 
 WordPress uses Child Themes -- a theme that inherits traits from a Parent Theme -- to allow any theme to be customized and still benefit from updates.
 
-Child Themes inherit all directory structure and files from their Parent Theme. The Parent Theme functions, structure, style and scripts are all inherited. In the Child Themes you can modify or turn off styles inherited from the parent theme, and build custom functionality.
+Child Themes inherit the directory structure and all the files from their Parent Theme. You can modify or turn off attributes inherited from the parent theme, and build custom functionality.
 
 Largo is structured a specific way, and when you create a child theme it will be easiest for you to follow parallel structures as you modify and add.
 
@@ -13,6 +13,9 @@ Largo is structured a specific way, and when you create a child theme it will be
 ![Visual Representation of Child Theme Structure](https://raw.githubusercontent.com/INN/Largo-Sample-Child-Theme/master/docs/structure.png)
 
 # ```/less```
+
+### ```child.less```
+All .less files are brought into this master file. If you add additional .less files for plugins or new functionality, register it here. This file is rendered into child.css.
 
 ### ```variables.less```
 
@@ -70,21 +73,40 @@ Largo is structured a specific way, and when you create a child theme it will be
 ### ```_footer.less```
 
 ### 7.0 - Footer
-=======================
 #### 7.1 - Supplementary
 #### 7.2 - Boilerplate
 
 
 # ```/css```
 
-### ```style.css```
-An unminified version of ```less/style.less``` processed into CSS. You might need to create a blank file first time around.
-###```style.min.css```
-Minified version of ```css/style.css`` used in production. You might need to create a blank file first time around.
+### ```child.css```
+An unminified version of ```less/child.less``` processed into CSS. You need to create a blank file if one doesn't exist or the Grunt workflow won't work.
 
-#### Sample Gruntfile
+###```child.min.css```
+Minified version of ```css/child.css`` used in production. You need to create a blank file if one doesn't exist or the Grunt workflow won't work.
 
-Look at ```Gruntfile.js``` [here](https://github.com/INN/Largo-Sample-Child-Theme/blob/master/Gruntfile.js) in the Largo Sample Child Theme.
+## Grunt Workflow in OS X
+
+We use Grunt to handle the processing of Largo LESS into CSS, and you can add onto the workflow with your own needs in [```Gruntfile.js```](https://github.com/INN/Largo-Sample-Child-Theme/blob/master/Gruntfile.js).
+
+The first time you want to use your Grunt Workflow, you'll need to install dependencies. Once these are installed on your computer working with Grunt is pretty simple. Skip ahead if you have Node.js already installed.
+
+#### Installing Node.js
+
+1. We'll install NPM using [Homebrew](http://brew.sh/).
+2. Open Terminal and type ```brew node install```.
+
+#### Running the Grunt Workflow
+
+1. In the Terminal, change directory into your Child Theme
+```
+cd /path/to/your/wordpress/wp-content/themes/child-theme
+```
+2. Type ```npm install```
+3. Run ``grunt watch``` to start seeing changes to LESS appear live in your development environment.
+![Starting Grunt in a Child Theme](https://github.com/INN/Largo-Sample-Child-Theme/blob/master/docs/show-not-tell/starting-grunt.gif)
+4. Watch the Terminal for errors as you save changes in LESS files. Grunt will tell you if it has successfully reprocessed and minified files.
+![Grunt when files are changed](https://github.com/INN/Largo-Sample-Child-Theme/blob/master/docs/show-not-tell/grunt-at-work.gif)
 
 ### Override Largo Style
 
