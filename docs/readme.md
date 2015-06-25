@@ -93,7 +93,7 @@ The first time you want to use your Grunt Workflow, you'll need to install depen
 
 #### Installing Node.js
 
-1. We'll install NPM using [Homebrew](http://brew.sh/).
+1. We'll install Node using [Homebrew](http://brew.sh/).
 2. Open Terminal and type ```brew node install```.
 
 #### Running the Grunt Workflow
