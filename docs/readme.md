@@ -9,7 +9,7 @@ Child Themes inherit the directory structure and all the files from their Parent
 Largo is structured a specific way, and when you create a child theme it will be easiest for you to follow parallel structures as you modify and add.
 
 ### Largo Child Theme Structure
-
+*A visual representation of the folder structure (grey lines) and key files. Orange lines indicate Grunt Workflow.*
 ![Visual Representation of Child Theme Structure](https://raw.githubusercontent.com/INN/Largo-Sample-Child-Theme/master/docs/structure.png)
 
 # ```/less```
