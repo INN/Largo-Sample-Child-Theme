@@ -129,6 +129,7 @@ In this case, we would target ```.stories h2.entry-title``` in our CSS.
 ###Override Largo Template Parts and Add Custom Parts
 
 To override a template part from Largo:
+
 1. Create a ```/partials``` directory in your child theme.
 2. Copy the partial over from Largo you plan to modify, preserving the filename.
 3. Make your changes.
@@ -140,8 +141,9 @@ As you build custom elements, you can and should store these theme parts in this
 ###Override Largo Custom Functions
 
 To override a custom function from Largo (like the byline output):
-1. Create a ```/inc``` directory in your child theme.
-2. Copy the file containing the custom function over from Largo you plan to modify, preserving the filename.
+1. Create a ```/inc``` directory in your child theme if one doesn't already exist.
+2. Create a file given the same name as the file you're overwriting.
+3. Paste the function you're overwriting.
 3. Make your changes.
 
 #### Development Guidelines
