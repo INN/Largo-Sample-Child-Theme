@@ -88,6 +88,20 @@ Look at ```Gruntfile.js``` [here](https://github.com/INN/Largo-Sample-Child-Them
 
 ### Override Largo Style
 
+When overriding default styles, it's important to identify the proper selector. Unless you're well versed with Largo, it's easiest to identify the source of style to override using a browser inspector tool. Battery issues aside, I prefer Google Chrome's Developer Tools.
+
+1. Open Google Chrome and go to your child-themed website.
+2. Find an element you'd like to change, like a headline color.
+3. Right-click and ```Inspect Element```.
+4. In the example below, the color is immediately available. You can test with a new color, and know the proper CSS selector to use in your file to overwrite.
+
+![Opening the Google Chrome Inspector and changing value Animation](https://github.com/INN/Largo-Sample-Child-Theme/blob/master/docs/show-not-tell/inspect-and-change.gif)
+5. However, what if the value we want to change like a font isn't showing up? You might need to click into the Compute tab in the inspector, find out where the Parent Theme definition is.
+
+To override a font from a parent theme
+![Opening the Google Chrome Inspector, compute and change Animation](https://github.com/INN/Largo-Sample-Child-Theme/blob/master/docs/show-not-tell/inspect-compute-change.gif)
+
+In this case, we would target ```.stories h2.entry-title``` in our CSS.
 
 
 ###Override Largo Template Parts and Add Custom Parts
