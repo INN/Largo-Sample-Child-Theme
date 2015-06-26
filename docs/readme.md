@@ -8,7 +8,16 @@ Child Themes inherit the directory structure and all the files from their Parent
 
 Largo is structured a specific way, and when you create a child theme it will be easiest for you to follow parallel structures as you modify and add.
 
-### Largo Child Theme Structure
+#Table of Contents
+* 1. Largo Child Theme Structure
+* 2. Largo and WordPress Differences
+* 3. Grunt Workflow
+* 4. Override Largo Styles
+* 5. Override Largo Functions
+* 6. Development Guidelines
+* 7. Other Resources
+
+### 1. Largo Child Theme Structure
 *A visual representation of the folder structure (grey lines) and key files. Orange lines indicate Grunt Workflow.*
 ![Visual Representation of Child Theme Structure](https://raw.githubusercontent.com/INN/Largo-Sample-Child-Theme/master/docs/structure.png)
 
@@ -85,7 +94,53 @@ An unminified version of ```less/child.less``` processed into CSS. You need to c
 ###```child.min.css```
 Minified version of ```css/child.css`` used in production. You need to create a blank file if one doesn't exist or the Grunt workflow won't work.
 
-## Grunt Workflow in OS X
+## 2. Largo and WordPress Differences
+
+In Largo, we handle a number of common WordPress functions and features such as bylines and homepages differently than most standard WordPress themes.
+
+Often this is because we have improved on default functionality so that it's better suited for news publishing. Sometimes Largo differences are a result of it being a fork of the open source NPR Argo Project with numerous authors.
+
+Here are some Largo Functions you'll want to know before getting started.
+
+```
+largo_time()
+```
+For posts published less than 24 hours ago, show "time ago" instead of date, otherwise just use get_the_date.
+
+```
+largo_byline()
+```
+Outputs a byline with author links, including for multiple authors. Best in place of the_author().
+
+```
+largo_post_social_links()
+```
+Social media, email and print buttons. Uses largoCore.js to handle services ([see source](https://github.com/INN/Largo/blob/master/js/largoCore.js#L210)). Set services and social link display settings in Theme Options.
+
+```
+largo_excerpt()
+```
+A much better default excerpt than WordPress' the_excerpt().
+
+```
+largo_trim_sentences()
+```
+A content-sensitive way to split sentences.
+
+```
+largo_comment()
+```
+A helper function for ```wp_list_comments()`` to output comments Largo-style.
+
+Ex. ```wp_list_comments( array( 'callback' => 'largo_comment' ) )```
+
+WordPress Feature | Largo Feature
+------------- | -------------
+Home pages as WordPress Pages and Templates | Homepages function to register multiple templates with zones.
+Widgets | Largo comes with a number of widgets with more finite controls for how content is selected and shown.
+Basic AJAX calls | largo_load_more_posts()
+
+## 3. Grunt Workflow in OS X
 
 We use Grunt to handle the processing of Largo LESS into CSS, and you can add onto the workflow with your own needs in [```Gruntfile.js```](https://github.com/INN/Largo-Sample-Child-Theme/blob/master/Gruntfile.js).
 
@@ -108,7 +163,7 @@ cd /path/to/your/wordpress/wp-content/themes/child-theme
 4. Watch the Terminal for errors as you save changes in LESS files. Grunt will tell you if it has successfully reprocessed and minified files.
 ![Grunt when files are changed](https://github.com/INN/Largo-Sample-Child-Theme/blob/master/docs/show-not-tell/grunt-at-work.gif)
 
-### Override Largo Style
+## 4. Override Largo Style
 
 When overriding default styles, it's important to identify the proper selector. Unless you're well versed with Largo, it's easiest to identify the source of style to override using a browser inspector tool. Battery issues aside, I prefer Google Chrome's Developer Tools.
 
@@ -126,7 +181,7 @@ To override a font from a parent theme
 In this case, we would target ```.stories h2.entry-title``` in our CSS.
 
 
-###Override Largo Template Parts and Add Custom Parts
+## 5. Override Largo Template Parts and Add Custom Parts
 
 To override a template part from Largo:
 
@@ -138,7 +193,7 @@ This uses the get_template_part WordPress function. The only difference is that 
 
 As you build custom elements, you can and should store these theme parts in this directory.
 
-###Override Largo Custom Functions
+### 6. Override Largo Custom Functions
 
 To override a custom function from Largo (like the byline output):
 1. Create a ```/inc``` directory in your child theme if one doesn't already exist.
@@ -146,12 +201,12 @@ To override a custom function from Largo (like the byline output):
 3. Paste the function you're overwriting.
 3. Make your changes.
 
-#### Development Guidelines
+#### 7. Development Guidelines
 - **Don't move functions to a new location.** Overriding largo_byline() output? It should be in ```/inc/post-meta.php```, not ```functions.php```.
 - **Don't Rebuild the Wheel**. Always modify and use existing functions instead of DIY. This saves clients money, us time and future us hassle.
 - **Don't assume the plugin is there**. Wrap plugin-dependent functions with ```if(function_exists('function')){ plugin_dependent_function(); }``` to prevent missing plugins from breaking the site.
 
-#### Other Largo Child Theme Resources
+#### 8. Other Largo Child Theme Resources
 - [Child Themes Checklist](https://github.com/INN/docs/blob/master/checklists/updating-child-themes.md) in INN/docs.
 - [Largo Documentation --> For Developers](http://largo.readthedocs.org/developers/fordevelopers.html#overview) on readthedocs.org.
 - [Largo Sample Child Theme](https://github.com/INN/Largo-Sample-Child-Theme) in INN/Largo-Sample-Child-Theme
