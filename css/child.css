@@ -1,0 +1,192 @@
+/**
+ * Largo Sample Child Theme
+ * =======================
+ * Homepage Styles?
+ *    /homepages/less
+ */
+/**
+ * 1.1 - Variables
+ * =======================
+ * 1.1.1 - Colors
+ * 1.1.2 - Fonts
+ */
+/**
+  * 1.1.1 Colors - Global and Brand
+  * -----------------------
+  */
+/* Default Variable Names
+ * @red, @orange, @yellow
+ * @green, @blue, @purple
+ * @brown, @gray, @black
+ *
+ * @link
+ * @link_hover
+ * @brand_primary (only use if different from default color already in use)
+ * @brand_secondary (only use if different from default color already in use)
+ *
+ * VARIATIONS
+ * @*_light, @*_dark, @*_transparent
+----------------------------- */
+/**
+ * 1.1.2 - Font Definitions
+ * -----------------------
+ */
+/* @headline
+ * Typeface Name
+ * Used on headlines throughout site
+----------------------------- */
+/* @serif
+ * Typeface Name
+ * For body and other general aplications
+----------------------------- */
+/* @sans
+ * Typeface Name
+ * For labels, bylines, photo credits, etc
+----------------------------- */
+/**
+ * 1.2 - Utilities
+ * =======================
+ * 1.1 - Animation
+ */
+/**
+   * 1.1 - Animation
+   * -----------------------
+   */
+/**
+ * 2.0 - Global Styles
+ * =======================
+ * 2.1 - Largo Parent Overrides
+ * 2.2 - Link Styles
+ * 2.3 - Image Styles
+ * 2.4 - Button Styles
+ * 2.5 - Sidebars
+ * 2.6 - Widgets
+ *     2.6.1 - Example Widget Definition
+ * 2.7 - Misc
+ */
+/**
+  * 2.1 - Largo Parent Overrides
+  * -----------------------
+  */
+.delete-this-class-its-just-for-show {
+  display: inherit;
+}
+/**
+  * 2.2 - Link Styles
+  * -----------------------
+  */
+/**
+  * 2.3 - Image Styles (use only for global img rule boxes, etc)
+  * -----------------------
+  */
+/**
+  * 2.4 - Button Styles
+  * -----------------------
+  */
+/**
+  * 2.5 - Sidebars
+  * -----------------------
+  */
+/**
+  * 2.6 - Widgets
+  * -----------------------
+  */
+/**
+  * 2.6.1 - Example Widget Definition
+  * -----------------------
+  */
+/**
+  * 2.7 - Misc
+  * -----------------------
+  */
+/**
+ * 3.0 - Header Styles
+ * =======================
+ * 3.1 - General Header Styles
+ * 3.2 - Main Navigation Styles
+ * 3.3 - Header Search
+ */
+/**
+  * 3.1 - General Header Styles
+  * -----------------------
+  */
+/**
+  * 3.2 - Main Navigation Styles
+  * -----------------------
+  */
+/**
+ * 3.3 - Header Search
+ * -----------------------
+ */
+/**
+ * 4.0 - Typography
+ * =======================
+ * 4.1 - Largo Parent Helvetica and Georgia Overrides
+ * 4.2 - Body
+ * 4.3 - Headings
+ */
+/**
+   * 4.1 - Largo Parent Override
+   * -----------------------
+   */
+/**
+   * 4.2 - Body
+   * -----------------------
+   */
+/**
+   * 4.3 - Headings
+   * -----------------------
+   */
+/**
+ * 5.0 - Single
+ * =======================
+ * 5.1 - Single Template Spacing
+ * 5.2 - Single Header
+ * 5.3 - Single Body
+ * 5.4 - Single Footer
+ * 5.5 - Comments
+ */
+/**
+  * 5.1 - Single Template Spacing
+  * -----------------------
+  */
+/**
+  * 5.2 - Single Header
+  * -----------------------
+  */
+/**
+  * 5.3 - Single Body
+  * -----------------------
+  */
+/**
+  * 5.4 - Footer
+  * -----------------------
+  */
+/**
+  * 5.5 - Comments
+  * -----------------------
+  */
+/**
+ * 6.0 Archive
+ * =======================
+ * 6.1 - Category and Date Archives
+ * 6.2 - Series Archives
+ * 6.3 - Author Archives
+ */
+/**
+  * 6.1 - Category and Date Archives
+  * -----------------------
+  */
+/**
+  * 6.2 - Series Archives
+  * -----------------------
+  */
+/**
+  * 6.3 - Author Archives
+  * -----------------------
+  */
+/**
+ * 7.0 - Footer
+ * =======================
+ */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxlc3MvX2dsb2JhbC5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFrQkE7RUFDRSxnQkFBQSIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogMi4wIC0gR2xvYmFsIFN0eWxlc1xuICogPT09PT09PT09PT09PT09PT09PT09PT1cbiAqIDIuMSAtIExhcmdvIFBhcmVudCBPdmVycmlkZXNcbiAqIDIuMiAtIExpbmsgU3R5bGVzXG4gKiAyLjMgLSBJbWFnZSBTdHlsZXNcbiAqIDIuNCAtIEJ1dHRvbiBTdHlsZXNcbiAqIDIuNSAtIFNpZGViYXJzXG4gKiAyLjYgLSBXaWRnZXRzXG4gKiAgICAgMi42LjEgLSBFeGFtcGxlIFdpZGdldCBEZWZpbml0aW9uXG4gKiAyLjcgLSBNaXNjXG4gKi9cblxuXG4vKipcbiAgKiAyLjEgLSBMYXJnbyBQYXJlbnQgT3ZlcnJpZGVzXG4gICogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgKi9cbi5kZWxldGUtdGhpcy1jbGFzcy1pdHMtanVzdC1mb3Itc2hvdyB7XG4gIGRpc3BsYXk6aW5oZXJpdDtcbn1cblxuXG4vKipcbiAgKiAyLjIgLSBMaW5rIFN0eWxlc1xuICAqIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gICovXG5cblxuLyoqXG4gICogMi4zIC0gSW1hZ2UgU3R5bGVzICh1c2Ugb25seSBmb3IgZ2xvYmFsIGltZyBydWxlIGJveGVzLCBldGMpXG4gICogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgKi9cblxuXG4vKipcbiAgKiAyLjQgLSBCdXR0b24gU3R5bGVzXG4gICogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgKi9cblxuXG4vKipcbiAgKiAyLjUgLSBTaWRlYmFyc1xuICAqIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gICovXG5cblxuLyoqXG4gICogMi42IC0gV2lkZ2V0c1xuICAqIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gICovXG5cblxuLyoqXG4gICogMi42LjEgLSBFeGFtcGxlIFdpZGdldCBEZWZpbml0aW9uXG4gICogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgKi9cblxuXG4vKipcbiAgKiAyLjcgLSBNaXNjXG4gICogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgKi9cbiJdfQ== */

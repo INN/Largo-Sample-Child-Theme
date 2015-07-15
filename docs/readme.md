@@ -4,7 +4,11 @@ When working with a WordPress theme like Largo, you never want to make edits to 
 
 WordPress uses Child Themes -- a theme that inherits traits from a Parent Theme -- to allow any theme to be customized and still benefit from updates.
 
+<<<<<<< HEAD
 Child Themes inherit the directory structure and all the files from their Parent Theme. You can modify or turn off attributes inherited from the parent theme, and build custom functionality.
+=======
+Child Themes inherit all directory structure and files from their Parent Theme. The Parent Theme functions, structure, style and scripts are all inherited. In the Child Themes you can modify or turn off styles inherited from the parent theme, and build custom functionality.
+>>>>>>> less-organization
 
 Largo is structured a specific way, and when you create a child theme it will be easiest for you to follow parallel structures as you modify and add.
 
@@ -88,6 +92,7 @@ All .less files are brought into this master file. If you add additional .less f
 
 # ```/css```
 
+<<<<<<< HEAD
 ### ```child.css```
 An unminified version of ```less/child.less``` processed into CSS. You need to create a blank file if one doesn't exist or the Grunt workflow won't work.
 
@@ -101,12 +106,88 @@ In Largo, we handle a number of common WordPress functions and features such as 
 Often this is because we have improved on default functionality so that it's better suited for news publishing. Sometimes Largo differences are a result of it being a fork of the open source NPR Argo Project with numerous authors.
 
 Here are some Largo Functions you'll want to know before getting started.
+=======
+![Visual Representation of Child Theme Structure](https://raw.githubusercontent.com/INN/Largo-Sample-Child-Theme/master/docs/structure.png)
+
+# ```/less```
+
+### ```variables.less```
+
+### 1.1 - Variables
+#### 1.1.1 - Colors
+#### 1.1.2 - Fonts
+
+### ```utilities.less```
+
+### 1.2 - Utilities
+#### 1.2.1 - Animation
+
+### ```_global.less```
+
+### 2.0 - Global Styles
+#### 2.1 - Largo Parent Overrides
+#### 2.2 - Link Styles
+#### 2.3 - Image Styles
+#### 2.4 - Button Styles
+#### 2.5 - Sidebars
+#### 2.6 - Widgets
+##### 2.6.1 - Example Widget Definition
+#### 2.7 - Misc
+
+### ```_header.less```
+
+### 3.0 - Header Styles
+#### 3.1 - General Header Styles
+#### 3.2 - Main Navigation Styles
+#### 3.3 - Header Search
+
+### ```_typography.less```
+
+### 4.0 - Typography
+#### 4.1 - Largo Parent Helvetica and Georgia Overrides
+#### 4.2 - Body
+#### 4.3 - Headings
+
+### ```_single.less```
+
+### 5.0 - Single
+#### 5.1 - Single Template Spacing
+#### 5.2 - Single Header
+#### 5.3 - Single Body
+#### 5.4 - Single Footer
+#### 5.5 - Comments
+
+### ```_archive.less```
+
+### 6.0 Archive
+#### 6.1 - Category and Date Archives
+#### 6.2 - Series Archives
+#### 6.3 - Author Archives
+
+### ```_footer.less```
+
+### 7.0 - Footer
+=======================
+#### 7.1 - Supplementary
+#### 7.2 - Boilerplate
+
+
+# ```/css```
+
+### ```style.css```
+An unminified version of ```less/style.less``` processed into CSS. You might need to create a blank file first time around.
+###```style.min.css```
+Minified version of ```css/style.css`` used in production. You might need to create a blank file first time around.
+
+#### Sample Gruntfile
+>>>>>>> less-organization
 
 ```
 largo_time()
 ```
 For posts published less than 24 hours ago, show "time ago" instead of date, otherwise just use get_the_date.
 
+<<<<<<< HEAD
 ```
 largo_byline()
 ```
@@ -182,6 +263,13 @@ In this case, we would target ```.stories h2.entry-title``` in our CSS.
 
 
 ## 5. Override Largo Template Parts and Add Custom Parts
+=======
+### Override Largo Style
+
+
+
+###Override Largo Template Parts and Add Custom Parts
+>>>>>>> less-organization
 
 To override a template part from Largo:
 
@@ -201,12 +289,20 @@ To override a custom function from Largo (like the byline output):
 3. Paste the function you're overwriting.
 3. Make your changes.
 
+<<<<<<< HEAD
 #### 7. Development Guidelines
+=======
+#### Development Guidelines
+>>>>>>> less-organization
 - **Don't move functions to a new location.** Overriding largo_byline() output? It should be in ```/inc/post-meta.php```, not ```functions.php```.
 - **Don't Rebuild the Wheel**. Always modify and use existing functions instead of DIY. This saves clients money, us time and future us hassle.
 - **Don't assume the plugin is there**. Wrap plugin-dependent functions with ```if(function_exists('function')){ plugin_dependent_function(); }``` to prevent missing plugins from breaking the site.
 
+<<<<<<< HEAD
 #### 8. Other Largo Child Theme Resources
+=======
+#### Other Largo Child Theme Resources
+>>>>>>> less-organization
 - [Child Themes Checklist](https://github.com/INN/docs/blob/master/checklists/updating-child-themes.md) in INN/docs.
 - [Largo Documentation --> For Developers](http://largo.readthedocs.org/developers/fordevelopers.html#overview) on readthedocs.org.
 - [Largo Sample Child Theme](https://github.com/INN/Largo-Sample-Child-Theme) in INN/Largo-Sample-Child-Theme

@@ -4,11 +4,11 @@ An example WordPress child theme based on the Largo parent theme (http://github.
 * * *
 ## WARNING
 
-We are still working on this so right now it just gives you an example of our preferred directory structure for a child theme (mirroring what we do in the Largo parent theme). 
+We are actively working on this!
 
-Soon, it will contain a readme in each folder explaining what goes where, how to modify the behavior/look/feel of Largo and other helpful tips and examples.
+To create a child theme of your own WE DO NOT recommend cloning this repo exactly as-is. Rather, this is intended as a verbose example of how to structure a child theme. You probably do not need (or want) everything that is included in here but we hope it is a helpful reference as you're building your own child theme with Largo.
 
-If you have specific questions or requests for docs, please open an issue so make sure to address them.
+If you have specific questions or requests for documentation, please open an issue so we make sure to address them.
 
 * * *
 
