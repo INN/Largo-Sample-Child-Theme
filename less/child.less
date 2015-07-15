@@ -1,21 +1,44 @@
 /**
  * Largo Sample Child Theme
  * =======================
- * Homepage Styles?
+ * Looking for homepage Styles, they're over here:
  *    /homepages/less
+ *
+ * The LESS files included here are combined and compiled into /css/child.css and /css/child.min.css
+ * Run 'grunt watch' from the root of the child directory to "watch" these files for changes
+ * This will recomplile the main stylesheet for your child theme anytime you save your work
+ *
  */
 
-@import "variables.less"; // 1.1
-@import "utilities.less"; // 1.2
 
-@import "_global.less"; // 2.0
+@import "variables.less"; // 1.1 - any LESS variables you use in your other LESS files belong here
 
-@import "_header.less"; // 3.0
 
-@import "_typography.less"; // 4.0
+/**
+ * If you have any custom LESS mixins they belong here
+ * Check Largo first to see if the mixin you need already exists before adding it here
+ * Uncomment if needed
+ */
 
-@import "_single.less"; // 5.0
+// @import "utilities.less"; // 1.2 - mixins 
 
-@import "_archive.less"; // 6.0
 
-@import "_footer.less"; // 7.0
+@import "_global.less"; // 2.0 - general styles for layout, reusable components, classes, etc. go here
+
+
+/**
+ * For more complicated child themes you may want to break your LESS up into discrete files
+ * Uncomment any of the following as needed to include them in your main stylesheet
+ */
+
+// @import "_typography.less"; // 4.0 - typography
+
+// @import "_header.less"; // 3.0 - styles for the header
+
+// @import "_single.less"; // 5.0 - any styles pertaining just to single posts or pages
+
+// @import "_archive.less"; // 6.0 - any styles specific to archive (category/tag/author/taxonomy/etc) pages
+
+// @import "_footer.less"; // 7.0 - styles for the footer
+
+// @import "_shame.less"; // 8.0 - hacks, stuff to fix later, CSS that is bad and should feel bad
