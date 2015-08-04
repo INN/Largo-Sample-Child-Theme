@@ -159,8 +159,8 @@ The first time you want to use your Grunt Workflow, you'll need to install depen
 cd /path/to/your/wordpress/wp-content/themes/child-theme
 ```
 2. Type ```npm install```
-3. Run ``grunt watch``` to start seeing changes to LESS appear live in your development environment.
 ![Starting Grunt in a Child Theme](https://github.com/INN/Largo-Sample-Child-Theme/blob/master/docs/show-not-tell/starting-grunt.gif)
+3. Run ``grunt watch``` to have LESS processed into CSS anytime you make changes to LESS files (ctrl+c to stop watching, or close terminal and kill the active process)
 4. Watch the Terminal for errors as you save changes in LESS files. Grunt will tell you if it has successfully reprocessed and minified files.
 ![Grunt when files are changed](https://github.com/INN/Largo-Sample-Child-Theme/blob/master/docs/show-not-tell/grunt-at-work.gif)
 
