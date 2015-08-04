@@ -29,15 +29,6 @@ An unminified version of ```less/child.less``` processed into CSS. You need to c
 ###```child.min.css```
 Minified version of ```css/child.css`` used in production. You need to create a blank file if one doesn't exist or the Grunt workflow won't work.
 
-## 2. Largo and WordPress Differences
-
-In Largo, we handle a number of common WordPress functions and features such as bylines and homepages differently than most standard WordPress themes.
-
-Often this is because we have improved on default functionality so that it's better suited for news publishing. Sometimes Largo differences are a result of it being a fork of the open source NPR Argo Project with numerous authors.
-
-Here are some Largo Functions you'll want to know before getting started.
-=======
-![Visual Representation of Child Theme Structure](https://raw.githubusercontent.com/INN/Largo-Sample-Child-Theme/master/docs/structure.png)
 
 # ```/less```
 
@@ -102,6 +93,15 @@ Here are some Largo Functions you'll want to know before getting started.
 #### 7.2 - Boilerplate
 
 #### Sample Gruntfile
+
+## 2. Largo and WordPress Differences
+
+In Largo, we handle a number of common WordPress functions and features such as bylines and homepages differently than most standard WordPress themes.
+
+Often this is because we have improved on default functionality so that it's better suited for news publishing. Sometimes Largo differences are a result of it being a fork of the open source NPR Argo Project with numerous authors.
+
+Here are some Largo Functions you'll want to know before getting started.
+
 
 ```
 largo_time()
